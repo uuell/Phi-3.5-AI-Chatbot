@@ -55,28 +55,31 @@ export default function Home() {
             ) 
           }
         </div>
-        <textarea
-          name="input-text"
-          value={inputText}
-          onChange={(e) => setInputText(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" && !e.shiftKey) {
-              e.preventDefault();
-              handleSend();
-            }
-          }}
-          placeholder="Ask Phi4"
-          className={styles.input}
-          rows={2}
-        />
-        <Image 
-          src={send}
-          alt="Send"
-          width={23}
-          height={23}
-          className={styles.button}
-          onClick={handleSend}
-        />
+        <div className={styles.inputContainer}>
+          <textarea
+            name="input-text"
+            value={inputText}
+            onChange={(e) => setInputText(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                handleSend();
+              }
+            }}
+            placeholder="Ask Phi4"
+            className={styles.input}
+            rows={2}
+          />
+            <Image 
+              src={send}
+              alt="Send"
+              width={20}
+              height={20}
+              className={styles.button}
+              onClick={handleSend}
+            />
+        </div>
+
       </div>
     </>
   );
