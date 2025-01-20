@@ -12,7 +12,7 @@ export const handleSendMessage = async (inputText, chatHistory, setChatHistory, 
         setIsLoading(true);
         const inference = new HfInference(token);
         const chatCompletion = await inference.chatCompletion({
-          model: "microsoft/Phi-3-mini-4k-instruct",
+          model: "microsoft/Phi-3.5-mini-instruct",
           messages: [
             ...chatHistory,
             { role: "user", content: inputText }

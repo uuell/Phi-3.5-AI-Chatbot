@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <div className={styles.logoContainer}>
-        <h3>Phi-4</h3>
+        <h3>Phi-3.5</h3>
         <div className={styles.logoMicrosoft}>Mircrosoft</div>
       </div>
       <div className={styles.container}>
@@ -66,7 +66,7 @@ export default function Home() {
                 handleSend();
               }
             }}
-            placeholder="Ask Phi4"
+            placeholder="Ask Phi"
             className={styles.input}
             rows={2}
           />

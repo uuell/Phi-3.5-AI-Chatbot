@@ -60,6 +60,13 @@
   -webkit-text-fill-color: transparent;
 }
 
+@media (prefers-color-scheme: light) {
+  .header {
+    background: linear-gradient(to right, #484848, #646464, #7C7C7C, #949494, #A8A8A8, #BEBEBE, #D4D4D4, #E8E8E8, #FFFFFF);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 .message {
   margin-bottom: 10px;
   line-height: 1.5;
@@ -78,6 +85,12 @@
   padding: 10px 15px;
   background-color: #333537;
   border-radius: 20px 0px 20px 20px;
+}
+
+@media (prefers-color-scheme: light) {
+  .message-user-input {
+    background-color: #ddd;
+  }
 }
 
 .message-user-output {
