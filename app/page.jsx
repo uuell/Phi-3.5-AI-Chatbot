@@ -51,7 +51,7 @@ export default function Home() {
       alert("An error occurred. Please try again later.");
     } finally {
       setIsLoading(false);
-      setInputText(""); // Clear input field
+      setInputText("");
     }
   };
 
